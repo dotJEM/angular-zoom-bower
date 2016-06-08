@@ -1,0 +1,49 @@
+dx-zoom {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  .dx-overlay {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+  .dx-zoom-box {
+     position: absolute;
+     display: inline-block;
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+dx-zoom-view {
+  position: relative;
+  display: block;
+
+  .dx-container {
+    background: #DDD;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  img {
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+
+  .dx-zoom-view-info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: #fff;
+    padding: 6px;
+    font-size: 14pt;
+  }
+}
